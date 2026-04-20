@@ -1,14 +1,15 @@
 package src;
 
+// This class represents the web application that receives notifications.
 public class AppWeb{
 
-    NotificationsFactory factory;
+    NotificationFactory factory;
 
-    public AppWeb (NotificationsFactory factory){
+    public AppWeb (NotificationFactory factory){
         this.factory = factory;
     }
 
-    public Notification recieveNotification(String type) {
+    public Notification receiveNotification(String type) {
         Notification notification;
 
         notification = factory.createNotification(type);

@@ -1,6 +1,6 @@
 package src;
 
-public class NotificationsFactory{
+public class NotificationFactory{
     public Notification createNotification(String type){
         Notification notification = null;
 
